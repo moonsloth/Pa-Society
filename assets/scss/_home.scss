@@ -1,0 +1,278 @@
+.jumbotron {
+    margin-top: -55px;
+    padding: 0;
+    overflow: hidden;
+    height: auto;
+
+    @include mq($from: tablet, $until: desktop) {
+        height: 400px;
+    }
+
+    @include mq($until: tablet) {
+        height: auto;
+    }
+}
+
+.cta {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 275px;
+    height: 350px;
+    transition: all .5s;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 1);
+
+    @include mq($from: tablet, $until: desktop) {
+        width: 100%;
+        height: 250px;
+    }
+
+    @include mq($until: tablet) {
+        background-size: cover;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
+
+.cta:hover,
+.cta:focus {
+    border: 2px solid rgba(0, 0, 0, 1);
+    text-decoration: none;
+
+    .cta__title {
+        font-size: 1.5rem;
+    }
+
+}
+
+.cta__title {
+    order: 2;
+    height: 115px;
+    color: $white;
+    text-align: center;
+    transition: all .5s;
+    font-size: 1.2rem;
+}
+
+.cta__text {
+    order: 1;
+    margin-bottom: 0px;
+    color: $white;
+    text-align: center;
+    height: 100px;
+    width: 80%;
+    font-size: .85rem;
+
+    @include mq($from: tablet, $until: desktop) {
+        visibility: hidden;
+        height: 0px;
+    }
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px
+}
+
+.about__art,
+.about__text {
+    width: 100%;
+    height: 775px;
+}
+
+.about__art {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @include mq($until: tablet) {
+        display: none;
+    }
+}
+
+.about__art__copy {
+    background: rgba(255, 255, 255, .5);
+    padding: 10px;
+    position: relative;
+    bottom: 0px;
+    text-align: right;
+}
+
+.about__text {
+    background-color: $gray;
+    padding: 100px 150px;
+
+    @include mq($from: tablet, $until: desktop) {
+        padding: 100px 100px;
+    }
+
+    @include mq($until: tablet) {
+        padding: 50px;
+        width: 100%
+    }
+}
+
+.about__text__holder {
+    width: 400px;
+
+    @include mq($from: mobile, $until: tablet) {
+        width: 285px;
+    }
+
+
+
+}
+
+.about__text--subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    display: block;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.about__text__h2 {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.about__text__btn {
+    margin-top: 30px;
+    ;
+}
+
+.rev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: $black;
+
+
+
+    h3 {
+        color: $white;
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+    }
+}
+
+
+
+
+.rev__cta__img {
+    width: 568px;
+    height: 230px;
+    display: block;
+    transition: opacity 1s;
+    background-color: $white;
+    background-size: contain;
+
+    @include mq($until: tablet) {
+        width: 365px;
+        height: 143px;
+    }
+}
+
+.rev__cta__img:hover,
+.rev__cta__img:focus {
+    opacity: 0.50;
+}
+
+.rev__btn {
+    margin: 10px 0px 40px 0px;
+}
+
+.gallery {
+    // height: 335px;
+    text-align: center;
+    text-decoration: none;
+
+    @include mq($from: tablet, $until: desktop) {
+        height: auto;
+    }
+
+    h2 {
+        margin: 20px 0px 0px 0px;
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+    }
+}
+
+.gallery__holder img {
+
+    transition: opacity 1s;
+    text-decoration: none;
+
+}
+
+.gallery__holder img:hover {
+    opacity: .25;
+    ;
+
+    +.gallery__text {
+        opacity: 1;
+    }
+}
+
+.gallery__text {
+    margin-top: -50%;
+    color: $blue;
+    opacity: 0;
+    transition: opacity 1s;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.contact {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+
+    @include mq($until: tablet) {
+        display: none;
+    }
+
+    a {
+        color: #555769;
+    }
+}
+
+.contact__container {
+    display: flex;
+
+
+}
+
+.contact__email {
+    padding: 30px;
+    width: 50%;
+}
+
+.contact__h3 {
+    color: $black;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    ;
+
+}
+
+.contact__form {
+    width: 50%;
+    padding: 30px;
+}
+
+#gform_submit_button_1 {
+    background-color: $blue;
+    color: $white;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    border-radius: 0%;
+    border: none;
+}

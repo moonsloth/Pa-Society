@@ -1,0 +1,7 @@
+@import 'mq';
+
+.container100 {
+    @include mq($from: mobile, $until: tablet) {}
+
+    @include mq($from: tablet) {}
+}

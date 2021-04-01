@@ -1,0 +1,27 @@
+body.login {
+  background-color:#004096;
+  color:#FFF;
+  background-image:url('pattern.png') no-repeat center center;
+}
+
+.login h1 a {
+  background-image: url('logo.svg');
+  background-size:cover;
+  width:100%;
+}
+
+body.login label {
+    color: #000;
+}
+
+body.login #backtoblog a, body.login #nav a {
+    color: #ffffff;
+}
+
+body.login p.message {
+    color: #000;
+}
+
+body.login div#login_error {
+    color: black;
+}

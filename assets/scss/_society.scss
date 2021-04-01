@@ -1,0 +1,131 @@
+.society__text{
+    H2,  H3, H4{
+        border-bottom: 2px $dkblue solid;
+        box-sizing: border-box;
+        width: fit-content;
+        padding-bottom: 3px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+}
+
+.grayBG{
+    background-color: $gray; 
+    padding:40px 0px;
+}
+
+.level3BG{
+    background-size: contain;
+    background-position: bottom;
+    padding:40px 0px;
+    min-height: 400px;
+    background-repeat-y: no-repeat;
+}
+
+.l3{
+    display:flex;
+    justify-content: flex-end;
+    align-items: top;
+    
+    .l3__card{
+        width: 50%;
+
+        .l3__card__copy{
+            font-size: .85rem;
+        }
+
+    }
+}
+
+.l4{
+    overflow: auto;
+
+    .alignright{
+        float:right;
+
+    }
+    .alignleft{
+        float:left;
+    }
+    .l4__copy--first{
+        padding:70px 0px;
+    }
+
+    .l4__copy--last{
+        width: 75%;
+    }
+}
+
+.l5{
+    background-color: $blue;
+    color:$white;
+    padding: 40px 0px;
+
+    .l5__cards{
+        display:flex;
+        justify-content: flex-end;
+        align-items: top;
+
+        .l5__card{
+            width: 50%;
+
+            p{
+                width:80%;
+            }
+        }
+    }
+
+    h4{
+        color:$white;
+    }
+}
+
+.l6{
+    padding: 40px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.l7{
+    padding: 40px 0px;
+
+    .l7__cards{
+        display:flex;
+        justify-content: flex-end;
+        align-items: top;
+
+        
+
+        .l7__card{
+            width: 50%;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+
+            p{
+                width:80%;
+            }
+
+            .l7__card__img__holder{
+                height: 125px; 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 80%;
+
+                .l7__car_img{
+                    width:50%;
+                    margin: 0 auto;
+                }
+            }
+
+            
+        }
+    }
+}

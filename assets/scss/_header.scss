@@ -1,0 +1,78 @@
+@import 'mq';
+
+#header-logo {
+    display: flex;
+    align-items: baseline;
+    width: 100vw;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+li a.nav-link {
+    color: $white;
+    text-transform: uppercase;
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+.logoNav {
+    width: 100%;
+}
+
+.blueBG {
+    background-color: $blue;
+}
+
+.tagline {
+    color: $white;
+    width: 200px;
+}
+
+.headerflex {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    .logo_group {
+        display: flex;
+        padding: 20px;
+        align-items: baseline;
+        width: 330px;
+    }
+
+    .top-nav {
+        float: right;
+        display: flex;
+        align-items: baseline;
+        text-align: center;
+
+        @include mq($until: tablet) {
+            display: none;
+        }
+
+
+
+        a {
+            flex-grow: 1;
+            margin-right: 50px;
+
+            @include mq($from: tablet, $until: desktop) {
+                margin-right: 0px;
+                margin-left: 50px;
+            }
+
+
+        }
+    }
+}
+
+
+
+.navbar-collapse {
+    justify-content: center;
+    font-size: 0.9em;
+}

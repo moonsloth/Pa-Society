@@ -1,0 +1,28 @@
+.sidebar__menu {
+
+    align-self: flex-start;
+
+    ul {
+        padding: 0px;
+    }
+
+    li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        list-style-position: inside;
+
+        a {
+            color: $black
+        }
+    }
+}
+
+.sidebar__line {
+    border-bottom: 1px solid $black;
+    display: block;
+    height: 20px;
+    width: 30px;
+    margin-bottom: 20px;
+
+}

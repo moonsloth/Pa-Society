@@ -1,0 +1,58 @@
+.be--gallery {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    .be--gallery__frame {
+        flex-direction: row;
+        align-items: center;
+        margin: 20px 0px;
+        border: 1px solid transparent;
+
+        .be--gallery__frame__pic {
+            width: 200px;
+            height: 270px;
+            background-size: cover;
+            transition: opacity 1s;
+        }
+
+        .be--gallery__frame__title {
+            color: $black;
+            text-align: center;
+            width: 200px;
+        }
+
+    }
+}
+
+.be--gallery__frame:hover,
+.be--gallery__frame:focus {
+    border: 1px solid $black;
+
+
+    .be--gallery__frame__pic {
+        opacity: .25;
+        text-decoration: none;
+        ;
+    }
+}
+
+
+// portait  page
+
+.portrait__frame {
+    float: left;
+    margin: 0px 20px 10px 0px;
+
+    .portrait__credit {
+        font-size: .7rem;
+
+    }
+
+    .portrait__name,
+    .portrait__credit,
+    .portrait__artist,
+    .portrait__img img {
+        width: 200px;
+    }
+}
