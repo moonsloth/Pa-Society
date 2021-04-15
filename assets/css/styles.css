@@ -854,7 +854,7 @@ footer {
 .about__art,
 .about__text {
   width: 100%;
-  height: 775px;
+  height: auto;
 }
 
 .about__art {
@@ -1003,7 +1003,7 @@ footer {
 }
 
 .contact {
-  height: 600px;
+  height: auto;
   display: flex;
   justify-content: center;
   background-size: cover;
@@ -1026,6 +1026,7 @@ footer {
 .contact__email {
   padding: 30px;
   width: 50%;
+  margin: 0 auto;
 }
 
 .contact__h3 {
@@ -1033,6 +1034,7 @@ footer {
   margin-bottom: 30px;
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
+  margin-top: 30px;
 }
 
 .contact__form {
@@ -1127,126 +1129,4 @@ footer {
 .portrait__frame .portrait__artist,
 .portrait__frame .portrait__img img {
   width: 200px;
-}
-
-.society__text H2, .society__text H3, .society__text H4 {
-  border-bottom: 2px #4f6d77 solid;
-  box-sizing: border-box;
-  width: fit-content;
-  padding-bottom: 3px;
-}
-
-.society__text h3 {
-  font-size: 1.5rem;
-}
-
-.grayBG {
-  background-color: #d3d2d0;
-  padding: 40px 0px;
-}
-
-.level3BG {
-  background-size: contain;
-  background-position: bottom;
-  padding: 40px 0px;
-  min-height: 400px;
-  background-repeat-y: no-repeat;
-}
-
-.l3 {
-  display: flex;
-  justify-content: flex-end;
-  align-items: top;
-}
-
-.l3 .l3__card {
-  width: 50%;
-}
-
-.l3 .l3__card .l3__card__copy {
-  font-size: .85rem;
-}
-
-.l4 {
-  overflow: auto;
-}
-
-.l4 .alignright {
-  float: right;
-}
-
-.l4 .alignleft {
-  float: left;
-}
-
-.l4 .l4__copy--first {
-  padding: 70px 0px;
-}
-
-.l4 .l4__copy--last {
-  width: 75%;
-}
-
-.l5 {
-  background-color: #77a0ab;
-  color: #ffffff;
-  padding: 40px 0px;
-}
-
-.l5 .l5__cards {
-  display: flex;
-  justify-content: flex-end;
-  align-items: top;
-}
-
-.l5 .l5__cards .l5__card {
-  width: 50%;
-}
-
-.l5 .l5__cards .l5__card p {
-  width: 80%;
-}
-
-.l5 h4 {
-  color: #ffffff;
-}
-
-.l6 {
-  padding: 40px;
-  background-size: cover;
-  background-position: center;
-}
-
-.l7 {
-  padding: 40px 0px;
-}
-
-.l7 .l7__cards {
-  display: flex;
-  justify-content: flex-end;
-  align-items: top;
-}
-
-.l7 .l7__cards .l7__card {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.l7 .l7__cards .l7__card p {
-  width: 80%;
-}
-
-.l7 .l7__cards .l7__card .l7__card__img__holder {
-  height: 125px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-}
-
-.l7 .l7__cards .l7__card .l7__card__img__holder .l7__car_img {
-  width: 50%;
-  margin: 0 auto;
 }

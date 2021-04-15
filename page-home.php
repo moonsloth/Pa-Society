@@ -37,13 +37,13 @@ $revCtaImg3 = get_field('rev_cta_3', 'option');
   <!-- Example row of columns -->
   <div class="row">
     <div class="col-md-3">
-      <a href="<?php get_site_url(); ?>/american-revolution/" class="homebtn">
+      <a href="<?php get_site_url(); ?>/Names/namelist.html" class="homebtn">
         <div id="cta1" class="cta" style="background-image: url(<?php echo $ctaImg1[
         	'url'
         ]; ?>)">
         <div class="cta__title">The American Revolution</div>
         <div class="cta__text"><?php echo $ctaTxt1; ?></div>
-        
+
       </div>
       </a>
     </div>
@@ -54,7 +54,7 @@ $revCtaImg3 = get_field('rev_cta_3', 'option');
         ]; ?>)">
         <div class="cta__title">About Us</div>
         <div class="cta__text"><?php echo $ctaTxt2; ?></div>
-        
+
       </div>
       </a>
     </div>
@@ -65,7 +65,7 @@ $revCtaImg3 = get_field('rev_cta_3', 'option');
         ]; ?>)">
         <div class="cta__title">Members Area</div>
         <div class="cta__text"><?php echo $ctaTxt3; ?></div>
-        
+
       </div>
       </a>
     </div>
@@ -76,12 +76,12 @@ $revCtaImg3 = get_field('rev_cta_3', 'option');
         ]; ?>)">
         <div class="cta__title">Join the society</div>
         <div class="cta__text"><?php echo $ctaTxt4; ?></div>
-        
+
       </div>
       </a>
     </div>
   </div>
-  
+
 </section>
 
 </div> <!-- /container -->
@@ -101,7 +101,7 @@ $revCtaImg3 = get_field('rev_cta_3', 'option');
 
       <a href="<?php echo get_site_url(); ?>/about" class="btn about__text__btn">LEARN MORE</a>
     </div>
-    
+
   </div>
 
 </div>
@@ -115,31 +115,31 @@ $revCtaImg3 = get_field('rev_cta_3', 'option');
 	'url'
 ]; ?>)">
   <h3>The American Revolution</h3>
-  <a href="<?php echo get_site_url(); ?>/officers-2/" class="rev__cta">
+  <a href="<?php echo get_site_url(); ?>/Names/namelist.html" class="rev__cta">
     <div class="rev__cta__img" style="background-image: url(<?php echo $revCtaImg1[
     	'url'
     ]; ?>)"></div>
   </a>
 
-  <a href="<?php echo get_site_url(); ?>/officers-2/" class="btn rev__btn">LEARN MORE</a>
+  <a href="<?php echo get_site_url(); ?>/Names/namelist.html" class="btn rev__btn">LEARN MORE</a>
 
-  <a href="<?php echo get_site_url(); ?>/units" class="rev__cta">
+  <a href="<?php echo get_site_url(); ?>/unit-list/Unitslist.html" class="rev__cta">
     <div class="rev__cta__img" style="background-image: url(<?php echo $revCtaImg2[
     	'url'
     ]; ?>)"></div>
   </a>
 
-  <a href="<?php echo get_site_url(); ?>/units" class="btn rev__btn">LEARN MORE</a>
+  <a href="<?php echo get_site_url(); ?>/unit-list/Unitslist.html" class="btn rev__btn">LEARN MORE</a>
 
-  <a href="<?php echo get_site_url(); ?>/military-actions" class="rev__cta">
+  <a href="<?php echo get_site_url(); ?>/Battles/battles.html" class="rev__cta">
     <div class="rev__cta__img" style="background-image: url(<?php echo $revCtaImg3[
     	'url'
     ]; ?>)"></div>
   </a>
 
-  <a href="<?php echo get_site_url(); ?>/military-actions" class="btn rev__btn">LEARN MORE</a>
+  <a href="<?php echo get_site_url(); ?>/Battles/battles.html" class="btn rev__btn">LEARN MORE</a>
 
-  <a href="<?php echo get_site_url(); ?>/about" class="btn rev__btn--big">Explore MORE</a>
+  <a href="<?php echo get_site_url(); ?>/american-revolution" class="btn rev__btn--big">Explore MORE</a>
 </div>
 
 
@@ -154,7 +154,7 @@ $revCtaImg3 = get_field('rev_cta_3', 'option');
 
   <?php
   $posts = get_posts([
-    'posts_per_page' => -1, 
+    'posts_per_page' => -1,
     'post_type' => 'gallery_post',
     'meta_key'			=> 'last_name',
     'orderby'			=> 'meta_value',
@@ -169,14 +169,14 @@ $revCtaImg3 = get_field('rev_cta_3', 'option');
 	$image = get_field('image');
 	$link = get_sub_field('portrait_url');
 	?>
-    
+
     <a href="<?php the_permalink(); ?>">
       <div class="gallery__holder">
         <img src="<?php echo $image['url']; ?>" class="gallery__pic">
         <div class="gallery__text"><?php the_title(); ?></div>
       </div>
   </a>
-   
+
 
     <?php
 endforeach; ?>
@@ -200,11 +200,13 @@ endforeach; ?>
   <div class="contact__email">
     <h3 class="contact__h3">Email</h3>
     <a class="" href="mailto:society@pasocietyofthecincinnati.org">society@pasocietyofthecincinnati.org</a>
-  </div>
-  <div class="contact__form">
-  <h3 class="contact__h3">GET IN TOUCH</h3>
+    <h3 class="contact__h3">GET IN TOUCH</h3>
   <?php gravity_form(1, false, false, false, '', false); ?>
   </div>
+  <!-- <div class="contact__form">
+  <h3 class="contact__h3">GET IN TOUCH</h3>
+  <?php gravity_form(1, false, false, false, '', false); ?>
+  </div> -->
 </div>
 </div>
 
@@ -218,7 +220,7 @@ endforeach; ?>
 <script type="text/javascript">
 ;(function ($) {
 
-	
+
 	"use strict";
     document.addEventListener('DOMContentLoaded', function () {
 
@@ -226,34 +228,34 @@ endforeach; ?>
         clickedIt();
       });
 
-      function clickedIt() {   
+      function clickedIt() {
         let canSee = $("#main-nav").is(":visible");
 
         if(canSee == false){
           $('.jumbotron').css('margin-top', '0px');
-          
+
         }else{
           $('.jumbotron').css('margin-top', '-55px');
         }
       }
 
-      
-      
+
+
       var slideCnt = 3;
 
       if (document.documentElement.clientWidth> 414) {
         slideCnt = 6;
 
       };
-    
-      
+
+
       $(".regular").slick({
         dots: true,
         infinite: true,
         slidesToShow: slideCnt,
         slidesToScroll: slideCnt
       });
-    
+
     });
   }(jQuery));
 
